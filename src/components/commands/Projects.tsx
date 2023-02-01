@@ -39,8 +39,8 @@ const Projects: React.FC = () => {
   ) : (
     <div data-testid="projects">
       <ProjectsIntro>
-        “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        My projects are diverse from Machine learning to Web development <br/>
+        or just something exploring a fundamental concept.
       </ProjectsIntro>
       {projects.map(({ id, title, desc }) => (
         <ProjectContainer key={id}>
@@ -56,27 +56,33 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
-    desc: "My personal blog where I can write down my thoughts and experiences.",
-    url: "https://satnaing.dev/blog/",
+    title: "OCR Sudoku Solver",
+    desc: "A web app built with flask that solves sudoku using tensorflow and opencv.",
+    url: "https://github.com/EteimZ/OCR_Sudoku_Solver",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
+    title: "Socket.io tic tac toe",
+    desc: "A tic-tac-toe game powered by socket.io that enables realtime playing among two players.",
+    url: "https://github.com/EteimZ/socketio_tic_tac_toe",
   },
   {
     id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
+    title: "AI plays snake",
+    desc: "An AI model trained to play the game of snake using reinforcement learning",
+    url: "https://github.com/EteimZ/deep-Qlearning-Snake",
   },
   {
     id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
+    title: "Euclidean Geometry in OOP",
+    desc: "Exploring the wonderful world of geometry using OPP and turtle graphics",
+    url: "https://github.com/EteimZ/Geometry",
+  },
+  {
+    id: 5,
+    title: "HTTP implementation in python.",
+    desc: "Implementing the HTTP protocol in Python.",
+    url: "https://github.com/EteimZ/python-http-server",
   },
 ];
 
